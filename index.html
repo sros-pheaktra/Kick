@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Do ah nis pg -->
+    <title>Nike Product</title>
+    <!-- Page icon -->
+    <link rel="shortcut icon" href="images/logo/Kick_black_logo.jpg" type="image/x-icon">
+
+    <!-- Tailwind Link CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Tailwind CLI -->
+    <!-- <link rel="stylesheet" href="src/output.css"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header section -->
+    <header class="fixed z-1000 w-full">
+        <section class="flex justify-between w-full px-4 sm:px-[120px] bg-[#f5f5f5] items-center py-2">
+            <div>
+                <ul class="flex gap-4">
+                    <li><a href="adidas.html" title="Adidas logo"><span class="sr-only">Adidas Logo</span><img src="images/logo/adidas_logo_no_bg.png" alt="adidas logo no bg" class="h-[20px] w-auto transition-transform duration-300 ease-in-out hover:scale-110"></a></li>
+                    <li><a href="puma.html" title="Puma logo"><span class="sr-only">Puma Logo</span><img src="images/logo/puma_logo_no_bg.png" alt="puma logo no bg" class="h-[20px] w-auto transition-transform duration-300 ease-in-out hover:scale-110"></a></li>
+                    <li><a href="nike.html" title="Nike logo"><span class="sr-only">Nike Logo</span><img src="images/logo/nike_logo_no_bg.png" alt="nike logo no bg" class="h-[20px] w-auto transition-transform duration-300 ease-in-out hover:scale-110 "></a></li>
+                    
+                </ul>
+            </div>
+            <div>
+                <ul class="flex gap-2 md:gap-4 font-semibold text-[1rem]">
+                    <li><a href="about_us.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">About Us</a></li>
+                    <li><a href="contact.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Contact</a></li>
+                    <li><a href="sign_in.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Sign in</a></li>
+                </ul>
+            </div>
+        </section>
+        <nav class="w-full  px-4 bg-white py-2 flex flex-col md:flex-row md:px-[120px] justify-between items-center gap-2">
+            <div>
+                <a href="index.html" title="Kick Logo"><span class="sr-only">Logo</span><img src="images/logo/Kick_black_logo_no_bg_500x250.png" alt="Kick Logo" class="w-[70px] md:w-[80px] h-auto transition-transform duration-300 ease-in-out hover:scale-110 "></a>
+            </div>
+            <ul class="flex justify-center font-semibold gap-4 md:gap-6 w-full text-[1rem] md:text-[20px]">
+                <li><a href="feature.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Feature</a></li>
+                <li><a href="collection.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Collection</a></li>
+                <li><a href="accessory.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Accessory</a></li>
+            </ul>
+            <div class="relative flex gap-4 items-center">
+                <div>
+                    <label for="search-input" class="sr-only">Search</label>
+                    <input type="text" id="search-input" name="search" placeholder="Search" class="pl-8 py-2 bg-[#f5f5f5] rounded-full focus:outline-1 placeholder:text-[#545454]">
+                    <i class="fas fa-search absolute top-3 left-3"></i>
+                </div>
+                <div class="flex gap-4 text-black text-[1.5rem]">
+                    <a href="favorite.html" class="transition-transform duration-300 ease-in-out hover:scale-105"><span class="sr-only">favorite</span><i class="fa-solid fa-heart hover:text-[#545454]" title="favorite"></i></a>
+                    <a href="cart.html" class="transition-transform duration-300 ease-in-out hover:scale-105"><span class="sr-only">cart</span><i class="fa-solid fa-cart-shopping hover:text-[#545454]" title="cart"></i></a>
+                </div>
+                
+                
+            </div>
+        </nav>
+    </header>
+
+    
+    <!-- hero section -->
+    <main class="pt-39 md:pt-24">
+        <section class="w-full relative ">
+            <img src="images/nike-images/cristiano-ronaldo-nike-players-5k-xp.jpg" alt="Ronaldo Messi and Neymar" class="w-full h-auto">
+            <article class="absolute w-full bottom-2 md:bottom-70 text-center leading-[1] text-white">
+                <p class="font-semibold text-[12px] md:text-[3rem]  ">Choose Your Gear</p>
+                <h1 class="text-[3rem] md:text-[120px] font-bold">Start Your Journey</h1>
+                <p class="font-semibold text-[12px] md:text-[3rem] ">Create An Impact On The Field</p>
+            </article>
+        </section>
+
+        <!-- Flex Section -->
+        <section class="w-full mt-10 md:mt-20 mx-auto w-full px-[40px] md:px-[120px]">
+            <div class="flex flex-col md:flex-row justify-between md:gap-10 items-center text-center md:text-left">
+                <h1 class="text-3xl md:text-[120px] font-bold mb-4 md:w-1/2">
+                    Where Every Star Begins to Shine
+                </h1>
+                <article class="md:w-2/5">
+                    <p class="text-base md:text-[1.5rem] text-[#545454] mb-4">
+                        Kick is your destination for the latest and greatest in football footwear and gear. Discover exclusive collections from top brands and legendary players. Whether you're a rising star or a seasoned pro, Kick helps you shine on and off the field.
+                    </p>
+                    <p class="text-base md:text-[1.5rem] text-[#545454] mb-4">
+                        Explore our curated selection of cleats, apparel, and accessories designed for performance and style. Stay ahead of the game with new arrivals, best sellers, and limited-edition releases. At Kick, we believe every player deserves the best—gear up and make your mark today!
+                    </p>
+                    <a href="feature.html" class="inline-block text-base md:text-[1.5rem] px-6 py-2 bg-black text-white rounded-full font-semibold hover:bg-[#222] transition-colors duration-300">
+                        Explore Features
+                    </a>
+                </article>
+            </div>
+
+        </section>
+
+        <!-- Brand selection -->
+        <section class="w-full mt-10 md:mt-20 mx-auto w-full px-[40px] md:px-[120px]">
+            <article>
+                <h2 class="text-[1rem] md:text-[2rem] text-black font-semibold ">
+                    Various Brands Selection
+                </h2>
+                <p class="text-[12px] md:text-[1.5rem] text-[#545454]">Explore our curated selection of top brands.</p>
+            </article>
+            <section class="grid grid-cols-1 mt-5  md:mt-10 gap-x-1 md:grid-cols-3 ">
+                <!-- card   -->
+                <div class="w-full container col-span-1 mb-4  md:col-span-2 md:row-span-2 z-50  relative">
+                    <a href="nike.html">
+                        <img src="images/nike-images/soccer-cleats-z76y6f375mb40vp6.jpg" alt="Nike Logo" class="w-full rounded-md cursor  object-cover">
+                    </a>
+                    <img src="images/logo/nike_logo_no_bg.png" alt="Nike Logo" class="h-[20px] md:h-[40px] mt-2 absolute top-2 left-2 md:top-4 md:left-4">
+                </div>
+                <!-- card -->
+                <div class="w-full container mb-4 md:mb-0 col-span-1 relative z-30">
+                    <a href="adidas.html">
+                        <img src="images/adidas-images/696580.jpg" alt="Adidas Logo" class="w-full cursor rounded-md  object-cover">
+                    </a>
+                    <img src="images/logo/adidas_logo_no_bg.png" alt="Adidas Logo" class="h-[20px] md:h-[30px] mt-2 absolute top-2 left-2 md:top-4 md:left-4">
+                </div>
+                
+                <!-- card   -->
+                <div class="w-full container mb-4 col-span-1 relative z-10">
+                    <a href="puma.html">
+                        <img src="images/puma-images/25ss-ts-football-q1-unlimited-pack-future-kv-dual-master.jpg" alt="Adidas Logo" class="w-full  rounded-md cursor  object-cover">
+                    </a>
+                    <img src="images/logo/puma_logo_no_bg.png" alt="Puma Logo" class="h-[20px] md:h-[30px] mt-2 absolute top-2 left-2 md:top-4 md:left-4">
+                </div>
+            </section>
+        </section>
+
+        <!-- Category -->
+        <section class="w-full mt-10 md:mt-30 mx-auto w-full px-[40px] md:px-[120px]">
+            <!-- nav to category secton -->
+            <section class="flex  md:justify-start gap-4 text-[12px] md:text-[1.5rem] text-[#545454] ">
+                <!-- links -->
+                <span><a href="#new-arrival" class="px-4 md:px-6 py-1 md:py-2 border-1 border-[#545454] hover:text-[white] hover:bg-black">New Arrival</a></span>
+                <span><a href="#best-seller" class="px-4 md:px-6 py-1 md:py-2 border-1  border-[#545454] hover:text-[white] hover:bg-black">Best Seller</a></span>
+                <span><a href="#collection" class="px-4 md:px-6  py-1 md:py-2 border-1 border-[#545454] hover:text-[white] hover:bg-black">Collection</a></span>
+            </section>
+
+
+            <!-- new arrival -->
+            <section id="new-arrival" class="mt-10 md:mt-20">
+                <article >
+                        <h2 class="text-[1rem] md:text-[2rem] text-black font-semibold ">
+                            New Arrival
+                        </h2>
+                        <p class="text-[12px] md:text-[1.5rem] text-[#545454]">Be the first to lace these up!</p>
+                </article>
+            
+                <section class="mt-5 md:mt-[4rem] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-10 md:gap-y-[100px] md:gap-x-10">
+
+                    <!--card-->
+                    <!-- add more card -->
+                    <!-- copy pi nis -->
+                    <div class="container">
+                        <a href="product-detail/Adidas_F50_Messi_Elite_FG.html">
+                            <!-- change images nis -->
+                            <img src="images/Mbappe-images/ZM+SUPERFLY+10+ELITE+KM+FG.jpg" alt="Nike x Kylian Mbapp Zoom Mercurial Superfly 10 Elite FG" class="w-full mb-2 cursor transition-transform duration-300 ease-in-out hover:scale-105">
+                        </a>
+                        <article class="md:mt-4">
+                            <!-- status -->
+                            <!-- for ah p ng bro dak muy na kor ban  -->
+                            <!-- comment all kor ban -->
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p>
+                            <!-- 
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Coming Soon</p>
+                            <p class="text-[12px] md:text-[1rem] text-[#545454] font-semibold">Sold Out</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Sustainable Materials</p> -->
+
+                            <!-- hx do name vea tam name images -->
+                            <h3 class="text-[1rem] md:text-[24px]  font-semibold line-clamp-2 leading-[1]">
+                                Nike x Kylian Mbapp Zoom Mercurial Superfly 10 Elite FG
+                            </h3>
+                            <p class="text-[12px] md:text-[1rem] mt-2 font-semibold line-clamp-2 text-[#545454] leading-[1]">
+                                Firm-Ground Low-Top Soccer Cleats
+                            </p>
+                            <div class="mt-2 md:mt-10 w-full flex justify-between">
+
+
+                                <!-- dak random ban or check prize vea tam google  -->
+                                <p class="text-[1rem] md:text-[24px] text-black">
+                                    $290
+                                </p>
+                                <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- dol trem nis -->
+                    
+                    <!--card-->
+                    <div class="container">
+                        <a href="product-detail/Adidas_F50_Messi_Elite_FG.html">
+
+                            <!-- change images nis -->
+                            <!-- comment all kor ban -->
+                            <img src="images/Mbappe-images/ZM+SUPERFLY+10+ELITE+FG.jpg" alt="Mercurial Dream Speed 009 Elite FG" class="w-full mb-2 cursor transition-transform duration-300 ease-in-out hover:scale-105">
+                        </a>
+                        <article class="md:mt-4">
+                            <!-- status -->
+                            <!-- for ah p ng bro dak muy na kor ban  -->
+                            <!-- comment all kor ban -->
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p>
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Best Seller</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Coming Soon</p>
+                            <p class="text-[12px] md:text-[1rem] text-[#545454] font-semibold">Sold Out</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Sustainable Materials</p> -->
+
+                            <!-- hx do name vea tam name images -->
+                            <h3 class="text-[1rem] md:text-[24px]  font-semibold line-clamp-2 leading-[1]">
+                                Mercurial Dream Speed 009 Elite FG
+                            </h3>
+                            <p class="text-[12px] md:text-[1rem] mt-2 font-semibold line-clamp-2 text-[#545454] leading-[1]">
+                                Firm-Ground Low-Top Soccer Cleats
+                            </p>
+                            <div class="mt-2 md:mt-10 w-full flex justify-between">
+
+
+                                <!-- dak random ban or check prize vea tam google  -->
+                                <p class="text-[1rem] md:text-[24px] text-black">
+                                    $270
+                                </p>
+                                <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="container">
+                        <a href="product-detail/Adidas_F50_Messi_Elite_FG.html">
+
+                            <!-- change images nis -->
+                            <!-- comment all kor ban -->
+                            <img src="images/nike-images/ZOOM+SUPERFLY+9+ELITE+KM+FG.jpg" alt="Nike Kylian Mbappé x Zoom Mercurial Superfly 9 Elite FG" class="w-full mb-2 cursor transition-transform duration-300 ease-in-out hover:scale-105">
+                        </a>
+                        <article class="md:mt-4">
+                            <!-- status -->
+                            <!-- for ah p ng bro dak muy na kor ban  -->
+                            <!-- comment all kor ban -->
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p>
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Best Seller</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Coming Soon</p>
+                            <p class="text-[12px] md:text-[1rem] text-[#545454] font-semibold">Sold Out</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Sustainable Materials</p> -->
+
+                            <!-- hx do name vea tam name images -->
+                            <h3 class="text-[1rem] md:text-[24px]  font-semibold line-clamp-2 leading-[1]">
+                                Nike Kylian Mbappé x Zoom Mercurial Superfly 9 Elite FG
+                            </h3>
+                            <p class="text-[12px] md:text-[1rem] mt-2 font-semibold line-clamp-2 text-[#545454] leading-[1]">
+                                Firm-Ground Low-Top Soccer Cleats
+                            </p>
+                            <div class="mt-2 md:mt-10 w-full flex justify-between">
+
+
+                                <!-- dak random ban or check prize vea tam google  -->
+                                <p class="text-[1rem] md:text-[24px] text-black">
+                                    $280
+                                </p>
+                                <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="container">
+                        <a href="product-detail/Adidas_F50_Messi_Elite_FG.html">
+
+                            <!-- change images nis -->
+                            <!-- comment all kor ban -->
+                            <img src="images/nike-images/ZM+SUPERFLY+10+ELITE+FG+LV8.jpg" alt="Nike Mercurial Superfly 10 Elite AS" class="w-full mb-2 cursor transition-transform duration-300 ease-in-out hover:scale-105">
+                        </a>
+                        <article class="md:mt-4">
+                            <!-- status -->
+                            <!-- for ah p ng bro dak muy na kor ban  -->
+                            <!-- comment all kor ban -->
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p> -->
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p>
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Coming Soon</p>
+                            <p class="text-[12px] md:text-[1rem] text-[#545454] font-semibold">Sold Out</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Sustainable Materials</p> -->
+
+                            <!-- hx do name vea tam name images -->
+                            <h3 class="text-[1rem] md:text-[24px]  font-semibold line-clamp-2 leading-[1]">
+                                Nike Mercurial Superfly 10 Elite AS
+                            </h3>
+                            <p class="text-[12px] md:text-[1rem] mt-2 font-semibold line-clamp-2 text-[#545454] leading-[1]">
+                                Firm-Ground Low-Top Soccer Cleats
+                            </p>
+                            <div class="mt-2 md:mt-10 w-full flex justify-between">
+
+
+                                <!-- dak random ban or check prize vea tam google  -->
+                                <p class="text-[1rem] md:text-[24px] text-black">
+                                    $250
+                                </p>
+                                <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="container">
+                        <a href="product-detail/Adidas_F50_Messi_Elite_FG.html">
+
+                            <!-- change images nis -->
+                            <!-- comment all kor ban -->
+                            <img src="images/nike-images/PHANTOM+6+LOW+ELITE+AG-PRO_2.jpg" alt="Nike Phantom 6 Low Elite AG-PRO" class="w-full mb-2 cursor transition-transform duration-300 ease-in-out hover:scale-105">
+                        </a>
+                        <article class="md:mt-4">
+                            <!-- status -->
+                            <!-- for ah p ng bro dak muy na kor ban  -->
+                            <!-- comment all kor ban -->
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p> -->
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p>
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Coming Soon</p>
+                            <p class="text-[12px] md:text-[1rem] text-[#545454] font-semibold">Sold Out</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Sustainable Materials</p> -->
+
+                            <!-- hx do name vea tam name images -->
+                            <h3 class="text-[1rem] md:text-[24px]  font-semibold line-clamp-2 leading-[1]">
+                                Nike Phantom 6 Low Elite AG-PRO
+                            </h3>
+                            <p class="text-[12px] md:text-[1rem] mt-2 font-semibold line-clamp-2 text-[#545454] leading-[1]">
+                                Artificial-Grass Football Boot
+                            </p>
+                            <div class="mt-2 md:mt-10 w-full flex justify-between">
+
+
+                                <!-- dak random ban or check prize vea tam google  -->
+                                <p class="text-[1rem] md:text-[24px] text-black">
+                                    $270
+                                </p>
+                                <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!--card-->
+                    <div class="container">
+                        <a href="product-detail/Adidas_F50_Messi_Elite_FG.html">
+                            <!-- change images nis -->
+                            <img src="images/nike-images/PHANTOM+6+LOW+ELITE+AG-PRO.jpg" alt="Nike Phantom 6 Low Elite FG-Pro" class="w-full mb-2 cursor transition-transform duration-300 ease-in-out hover:scale-105">
+                        </a>
+                        <article class="md:mt-4">
+                            <!-- status -->
+                            <!-- for ah p ng bro dak muy na kor ban  -->
+                            <!-- comment all kor ban -->
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p> -->
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p>
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Coming Soon</p>
+                            <p class="text-[12px] md:text-[1rem] text-[#545454] font-semibold">Sold Out</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Sustainable Materials</p> -->
+
+                            <!-- hx do name vea tam name images -->
+                            <h3 class="text-[1rem] md:text-[24px]  font-semibold line-clamp-2 leading-[1]">
+                                Nike Phantom 6 Low Elite FG-Pro
+                            </h3>
+                            <p class="text-[12px] md:text-[1rem] mt-2 font-semibold line-clamp-2 text-[#545454] leading-[1]">
+                                Firm-Ground Low-Top Soccer Cleats
+                            </p>
+                            <div class="mt-2 md:mt-10 w-full flex justify-between">
+
+
+                                <!-- dak random ban or check prize vea tam google  -->
+                                <p class="text-[1rem] md:text-[24px] text-black">
+                                    $260
+                                </p>
+                                <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="container">
+                        <a href="product-detail/Adidas_F50_Messi_Elite_FG.html">
+                            <!-- change images nis -->
+                            <img src="images/nike-images/zoom-mercurial-superfly-9-pro-fg-firm-ground-soccer-cleats-mpSSSv.jpg" alt="Nike Mercurial Vapor Elite FG" class="w-full mb-2 cursor transition-transform duration-300 ease-in-out hover:scale-105">
+                        </a>
+                        <article class="md:mt-4">
+                            <!-- status -->
+                            <!-- for ah p ng bro dak muy na kor ban  -->
+                            <!-- comment all kor ban -->
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p> -->
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p>
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Coming Soon</p>
+                            <p class="text-[12px] md:text-[1rem] text-[#545454] font-semibold">Sold Out</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Sustainable Materials</p> -->
+
+                            <!-- hx do name vea tam name images -->
+                            <h3 class="text-[1rem] md:text-[24px]  font-semibold line-clamp-2 leading-[1]">
+                               Nike Mercurial Vapor Elite FG
+                            </h3>
+                            <p class="text-[12px] md:text-[1rem] mt-2 font-semibold line-clamp-2 text-[#545454] leading-[1]">
+                                Firm-Ground Low-Top Soccer Cleats
+                            </p>
+                            <div class="mt-2 md:mt-10 w-full flex justify-between">
+
+
+                                <!-- dak random ban or check prize vea tam google  -->
+                                <p class="text-[1rem] md:text-[24px] text-black">
+                                    $240
+                                </p>
+                                <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="container">
+                        <a href="product-detail/Adidas_F50_Messi_Elite_FG.html">
+                            <!-- change images nis -->
+                            <img src="images/nike-images/SUPERFLY+8+ELITE+FG.jpg" alt="Nike Mercurial Superfly 8 Elite FG" class="w-full mb-2 cursor transition-transform duration-300 ease-in-out hover:scale-105">
+                        </a>
+                        <article class="md:mt-4">
+                            <!-- status -->
+                            <!-- for ah p ng bro dak muy na kor ban  -->
+                            <!-- comment all kor ban -->
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p> -->
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p>
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Coming Soon</p>
+                            <p class="text-[12px] md:text-[1rem] text-[#545454] font-semibold">Sold Out</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Sustainable Materials</p> -->
+
+                            <!-- hx do name vea tam name images -->
+                            <h3 class="text-[1rem] md:text-[24px]  font-semibold line-clamp-2 leading-[1]">
+                                Nike Mercurial Superfly 8 Elite FG
+                            </h3>
+                            <p class="text-[12px] md:text-[1rem] mt-2 font-semibold line-clamp-2 text-[#545454] leading-[1]">
+                                Firm-Ground Low-Top Soccer Cleats
+                            </p>
+                            <div class="mt-2 md:mt-10 w-full flex justify-between">
+
+
+                                <!-- dak random ban or check prize vea tam google  -->
+                                <p class="text-[1rem] md:text-[24px] text-black">
+                                    $250
+                                </p>
+                                <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Best Seller -->
+            <section id="best-seller" class="mt-10 md:mt-40">
+                <article >
+                        <h2 class="text-[1rem] md:text-[2rem] text-black font-semibold ">
+                            Best Seller
+                        </h2>
+                        <p class="text-[12px] md:text-[1.5rem] text-[#545454]">Everyone #1 choice!</p>
+                </article>
+            
+                <section class="mt-5 md:mt-[4rem] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-10 md:gap-y-[100px] md:gap-x-10">
+
+                    <!--card-->
+                    <!-- add more card -->
+                    <!-- copy pi nis -->
+                    <div class="container">
+                        <a href="product-detail/Adidas_F50_Messi_Elite_FG.html">
+                            <!-- change images nis -->
+                            <img src="images/Ronado-images/0a3b646cedc2.jpg" alt="Nike Mercurial Superfly CR7 FG" class="w-full mb-2 cursor transition-transform duration-300 ease-in-out hover:scale-105">
+                        </a>
+                        <article class="md:mt-4">
+                            <!-- status -->
+                            <!-- for ah p ng bro dak muy na kor ban  -->
+                            <!-- comment all kor ban -->
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p> -->
+                            <p class="text-[12px] md:text-[1rem] text-blue-600 font-semibold">Best Seller</p>
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Coming Soon</p>
+                            <p class="text-[12px] md:text-[1rem] text-[#545454] font-semibold">Sold Out</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Sustainable Materials</p> -->
+
+                            <!-- hx do name vea tam name images -->
+                            <h3 class="text-[1rem] md:text-[24px]  font-semibold line-clamp-2 leading-[1]">
+                                Nike Mercurial Superfly CR7 FG
+                            </h3>
+                            <p class="text-[12px] md:text-[1rem] mt-2 font-semibold line-clamp-2 text-[#545454] leading-[1]">
+                                Firm-Ground Low-Top Soccer Cleats
+                            </p>
+                            <div class="mt-2 md:mt-10 w-full flex justify-between">
+
+
+                                <!-- dak random ban or check prize vea tam google  -->
+                                <p class="text-[1rem] md:text-[24px] text-black">
+                                    $320
+                                </p>
+                                <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- dol trem nis -->
+                    
+                    <!--card-->
+                    <div class="container">
+                        <a href="product-detail/Adidas_F50_Messi_Elite_FG.html">
+
+                            <!-- change images nis -->
+                            <!-- comment all kor ban -->
+                            <img src="images/Ronado-images/8de5b862bba4.jpg" alt="Nike Mercurial Superfly 6 CR7 FG" class="w-full mb-2 cursor transition-transform duration-300 ease-in-out hover:scale-105">
+                        </a>
+                        <article class="md:mt-4">
+                            <!-- status -->
+                            <!-- for ah p ng bro dak muy na kor ban  -->
+                            <!-- comment all kor ban -->
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p> -->
+                            <p class="text-[12px] md:text-[1rem] text-blue-600 font-semibold">Best Seller</p>
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Coming Soon</p>
+                            <p class="text-[12px] md:text-[1rem] text-[#545454] font-semibold">Sold Out</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Sustainable Materials</p> -->
+
+                            <!-- hx do name vea tam name images -->
+                            <h3 class="text-[1rem] md:text-[24px]  font-semibold line-clamp-2 leading-[1]">
+                                Nike Mercurial Superfly 6 CR7 FG
+                            </h3>
+                            <p class="text-[12px] md:text-[1rem] mt-2 font-semibold line-clamp-2 text-[#545454] leading-[1]">
+                                Firm-Ground Low-Top Soccer Cleats
+                            </p>
+                            <div class="mt-2 md:mt-10 w-full flex justify-between">
+
+
+                                <!-- dak random ban or check prize vea tam google  -->
+                                <p class="text-[1rem] md:text-[24px] text-black">
+                                    $300
+                                </p>
+                                <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="container">
+                        <a href="product-detail/Adidas_F50_Messi_Elite_FG.html">
+
+                            <!-- change images nis -->
+                            <!-- comment all kor ban -->
+                            <img src="images/Ronado-images/abd0d3a6a4da.jpg" alt="Nike Mercurial Superfly 6 CR7 FG" class="w-full mb-2 cursor transition-transform duration-300 ease-in-out hover:scale-105">
+                        </a>
+                        <article class="md:mt-4">
+                            <!-- status -->
+                            <!-- for ah p ng bro dak muy na kor ban  -->
+                            <!-- comment all kor ban -->
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p> -->
+                            <p class="text-[12px] md:text-[1rem] text-blue-600 font-semibold">Best Seller</p>
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Coming Soon</p>
+                            <p class="text-[12px] md:text-[1rem] text-[#545454] font-semibold">Sold Out</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Sustainable Materials</p> -->
+
+                            <!-- hx do name vea tam name images -->
+                            <h3 class="text-[1rem] md:text-[24px]  font-semibold line-clamp-2 leading-[1]">
+                                Nike Mercurial Superfly 6 CR7 FG
+                            </h3>
+                            <p class="text-[12px] md:text-[1rem] mt-2 font-semibold line-clamp-2 text-[#545454] leading-[1]">
+                                Firm-Ground Low-Top Soccer Cleats
+                            </p>
+                            <div class="mt-2 md:mt-10 w-full flex justify-between">
+
+
+                                <!-- dak random ban or check prize vea tam google  -->
+                                <p class="text-[1rem] md:text-[24px] text-black">
+                                    $280
+                                </p>
+                                <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="container">
+                        <a href="product-detail/Adidas_F50_Messi_Elite_FG.html">
+
+                            <!-- change images nis -->
+                            <!-- comment all kor ban -->
+                            <img src="images/Mbappe-images/Nike+Air+Zoom+Mercurial+Superfly+Elite+9+FG+Mbappé.jpg" alt="Nike Zoom Mercurial Superfly 9 Elite KM FG" class="w-full mb-2 cursor transition-transform duration-300 ease-in-out hover:scale-105">
+                        </a>
+                        <article class="md:mt-4">
+                            <!-- status -->
+                            <!-- for ah p ng bro dak muy na kor ban  -->
+                            <!-- comment all kor ban -->
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p> -->
+                            <p class="text-[12px] md:text-[1rem] text-blue-600 font-semibold">Best Seller</p>
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Coming Soon</p>
+                            <p class="text-[12px] md:text-[1rem] text-[#545454] font-semibold">Sold Out</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Sustainable Materials</p> -->
+
+                            <!-- hx do name vea tam name images -->
+                            <h3 class="text-[1rem] md:text-[24px]  font-semibold line-clamp-2 leading-[1]">
+                                Nike Zoom Mercurial Superfly 9 Elite KM FG
+                            </h3>
+                            <p class="text-[12px] md:text-[1rem] mt-2 font-semibold line-clamp-2 text-[#545454] leading-[1]">
+                                Firm-Ground Low-Top Soccer Cleats
+                            </p>
+                            <div class="mt-2 md:mt-10 w-full flex justify-between">
+
+
+                                <!-- dak random ban or check prize vea tam google  -->
+                                <p class="text-[1rem] md:text-[24px] text-black">
+                                    $310
+                                </p>
+                                <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="container">
+                        <a href="product-detail/Adidas_F50_Messi_Elite_FG.html">
+
+                            <!-- change images nis -->
+                            <!-- comment all kor ban -->
+                            <img src="images/Ronado-images/fb15dfb32ad4.jpg" alt="ZM VAPOR 16 ELITE FG" class="w-full mb-2 cursor transition-transform duration-300 ease-in-out hover:scale-105">
+                        </a>
+                        <article class="md:mt-4">
+                            <!-- status -->
+                            <!-- for ah p ng bro dak muy na kor ban  -->
+                            <!-- comment all kor ban -->
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p> -->
+                            <p class="text-[12px] md:text-[1rem] text-blue-600 font-semibold">Best Seller</p>
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Coming Soon</p>
+                            <p class="text-[12px] md:text-[1rem] text-[#545454] font-semibold">Sold Out</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Sustainable Materials</p> -->
+
+                            <!-- hx do name vea tam name images -->
+                            <h3 class="text-[1rem] md:text-[24px]  font-semibold line-clamp-2 leading-[1]">
+                                Nike Mercurial Vapor 16 Elite
+                            </h3>
+                            <p class="text-[12px] md:text-[1rem] mt-2 font-semibold line-clamp-2 text-[#545454] leading-[1]">
+                                Firm-Ground Low-Top Soccer Cleats
+                            </p>
+                            <div class="mt-2 md:mt-10 w-full flex justify-between">
+
+
+                                <!-- dak random ban or check prize vea tam google  -->
+                                <p class="text-[1rem] md:text-[24px] text-black">
+                                    $270
+                                </p>
+                                <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!--card-->
+                    <div class="container">
+                        <a href="product-detail/Adidas_F50_Messi_Elite_FG.html">
+                            <!-- change images nis -->
+                            <img src="images/Messi-images/06a4899eb514.jpg" alt="Adidas F50 Elite Messi FG " class="w-full mb-2 cursor transition-transform duration-300 ease-in-out hover:scale-105">
+                        </a>
+                        <article class="md:mt-4">
+                            <!-- status -->
+                            <!-- for ah p ng bro dak muy na kor ban  -->
+                            <!-- comment all kor ban -->
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p> -->
+                            <p class="text-[12px] md:text-[1rem] text-blue-600 font-semibold">Best Seller</p>
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Coming Soon</p>
+                            <p class="text-[12px] md:text-[1rem] text-[#545454] font-semibold">Sold Out</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Sustainable Materials</p> -->
+
+                            <!-- hx do name vea tam name images -->
+                            <h3 class="text-[1rem] md:text-[24px]  font-semibold line-clamp-2 leading-[1]">
+                                Adidas F50 Elite Messi FG 
+                            </h3>
+                            <p class="text-[12px] md:text-[1rem] mt-2 font-semibold line-clamp-2 text-[#545454] leading-[1]">
+                                Firm-Ground Low-Top Soccer Cleats
+                            </p>
+                            <div class="mt-2 md:mt-10 w-full flex justify-between">
+
+
+                                <!-- dak random ban or check prize vea tam google  -->
+                                <p class="text-[1rem] md:text-[24px] text-black">
+                                    $280
+                                </p>
+                                <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="container">
+                        <a href="product-detail/Adidas_F50_Messi_Elite_FG.html">
+                            <!-- change images nis -->
+                            <img src="images/Messi-images/0cdf1faf2fff.jpg" alt="Adidas X Speedportal Messi.1 FG" class="w-full mb-2 cursor transition-transform duration-300 ease-in-out hover:scale-105">
+                        </a>
+                        <article class="md:mt-4">
+                            <!-- status -->
+                            <!-- for ah p ng bro dak muy na kor ban  -->
+                            <!-- comment all kor ban -->
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p> -->
+                            <p class="text-[12px] md:text-[1rem] text-blue-600 font-semibold">Best Seller</p>
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Coming Soon</p>
+                            <p class="text-[12px] md:text-[1rem] text-[#545454] font-semibold">Sold Out</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Sustainable Materials</p> -->
+
+                            <!-- hx do name vea tam name images -->
+                            <h3 class="text-[1rem] md:text-[24px]  font-semibold line-clamp-2 leading-[1]">
+                                Adidas X Speedportal Messi.1 FG
+                            </h3>
+                            <p class="text-[12px] md:text-[1rem] mt-2 font-semibold line-clamp-2 text-[#545454] leading-[1]">
+                                Firm-Ground Low-Top Soccer Cleats
+                            </p>
+                            <div class="mt-2 md:mt-10 w-full flex justify-between">
+
+
+                                <!-- dak random ban or check prize vea tam google  -->
+                                <p class="text-[1rem] md:text-[24px] text-black">
+                                    $310
+                                </p>
+                                <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="container">
+                        <a href="product-detail/Adidas_F50_Messi_Elite_FG.html">
+                            <!-- change images nis -->
+                            <img src="images/Neymar-images/PUMA-Future-Z-1-1-FG-AG-Neymar-Copa-America-White-Yellow-Blue-1.jpg" alt="Puma Neymar Jr. x Future Z 1.1 FG" class="w-full mb-2 cursor transition-transform duration-300 ease-in-out hover:scale-105">
+                        </a>
+                        <article class="md:mt-4">
+                            <!-- status -->
+                            <!-- for ah p ng bro dak muy na kor ban  -->
+                            <!-- comment all kor ban -->
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">New Arrival</p> -->
+                            <p class="text-[12px] md:text-[1rem] text-blue-600 font-semibold">Best Seller</p>
+                            <!-- <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Coming Soon</p>
+                            <p class="text-[12px] md:text-[1rem] text-[#545454] font-semibold">Sold Out</p>
+                            <p class="text-[12px] md:text-[1rem] text-red-600 font-semibold">Sustainable Materials</p> -->
+
+                            <!-- hx do name vea tam name images -->
+                            <h3 class="text-[1rem] md:text-[24px]  font-semibold line-clamp-2 leading-[1]">
+                                Puma Neymar Jr. x Future Z 1.1 FG
+                            </h3>
+                            <p class="text-[12px] md:text-[1rem] mt-2 font-semibold line-clamp-2 text-[#545454] leading-[1]">
+                                Firm-Ground Low-Top Soccer Cleats
+                            </p>
+                            <div class="mt-2 md:mt-10 w-full flex justify-between">
+
+
+                                <!-- dak random ban or check prize vea tam google  -->
+                                <p class="text-[1rem] md:text-[24px] text-black">
+                                    $270
+                                </p>
+                                <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </section>
+
+            <!--Collection  -->
+            <section id="collection" class="mt-10 md:mt-40">
+                <article >
+                        <h2 class="text-[1rem] md:text-[2rem] text-black font-semibold ">
+                            Collection
+                        </h2>
+                        <p class="text-[12px] md:text-[1.5rem] text-[#545454]">Worn by legends, made for you to be one.</p>
+                </article>
+            
+                <section class="mt-5 md:mt-[4rem]">
+                        <!-- Collection card -->
+                    <section class="grid grid-cols-3 w-full">
+                        <div class="container relative" >
+                            <img src="./images/Ronado-images/ronaldo_boot_2x3.jpg" alt="Ronaldo holds a red and black cleat" class="w-full">
+                            <article class="px-2 md:px-6 absolute bottom-4 md:bottom-12 leading-[1] md:leading-[1.5]">
+                                <h3 class="text-[12px] md:text-[24px] font-semibold text-white">
+                                    Cristiano Ronaldo
+                                </h3>
+                                <p class="text-[8px] md:text-[16px] text-white hidden md:block">The embodiment of hard work, ambitionp, and footballing greatness.</p>
+                                <p class="text-[12px] md:text-[24px] font-semibold text-white hidden md:block">Nike Mercurial Superfly V FG</p>
+                                <p class="mt-1 md:mt-8"><a href="#" class="px-2 md:px-4 py-1 md:px-2 text-[8px] md:text-[24px] text-black font-semibold bg-white rounded-full hover:text-white hover:bg-black">Shop</a></p>
+                            </article>
+                            
+
+                        </div>
+                        <div class="container relative" >
+                            <img src="./images/Messi-images/messi_2x3.jpg" alt="Ronaldo holds a red and black cleat" class="w-full">
+                            <article class="px-2 md:px-6 absolute bottom-4 md:bottom-12 leading-[1] md:leading-[1.5]">
+                                <h3 class="text-[12px] md:text-[24px] font-semibold text-white">
+                                    Lionel Messi
+                                </h3>
+                                <p class="text-[8px] md:text-[16px] text-white hidden md:block">The silent magician, painting the game with pure genius and grace.</p>
+                                <p class="text-[12px] md:text-[24px] font-semibold text-white hidden md:block">Adidas X Crazyfast Messi FG</p>
+                                <p class="mt-1 md:mt-8"><a href="#" class="px-2 md:px-4 py-1 md:px-2 text-[8px] md:text-[24px] text-black font-semibold bg-white rounded-full hover:text-white hover:bg-black">Shop</a></p>
+                            </article>
+                            
+
+                        </div>
+                        <div class="container relative" >
+                            <img src="./images/Neymar-images/neymar-jr-brazil-futebol-ney-paris-psg-puma-vrasil.jpg" alt="Ronaldo holds a red and black cleat">
+                            <article class="px-2 md:px-6 absolute bottom-4 md:bottom-12 leading-[1] md:leading-[1.5]">
+                                <h3 class="text-[12px] md:text-[24px] font-semibold text-white">
+                                    Neymar Jr.
+                                </h3>
+                                <p class="text-[8px] md:text-[16px] text-white hidden md:block">The showman—where football meets dance, style, and spark.</p>
+                                <p class="text-[12px] md:text-[24px] font-semibold text-white hidden md:block">PUMA FUTURE Z 1.1 FG</p>
+                                <p class="mt-1 md:mt-8"><a href="#" class="px-2 md:px-4 py-1 md:px-2 text-[8px] md:text-[24px] text-black font-semibold bg-white rounded-full hover:text-white hover:bg-black">Shop</a></p>
+                            </article>
+                        </div>
+                        <div class="container relative col-span-2">
+                            <img src="./images/Mbappe-images/mbappe-wallpapper.png" alt="Kylian Mbappé in action" class="w-full h-full object-cover">
+                            <article class="px-2 md:px-6 absolute bottom-4 md:bottom-12 left-0 right-0 leading-[1] md:leading-[1.5]">
+                                <h3 class="text-[12px] md:text-[24px] font-semibold text-white">
+                                    Kylian Mbappé
+                                </h3>
+                                <p class="text-[8px] md:text-[16px] text-white hidden md:block">The next generation of speed, skill, and football stardom.</p>
+                                <p class="text-[12px] md:text-[24px] font-semibold text-white hidden md:block">Nike Air Zoom Mercurial Superfly 9 Elite FG</p>
+                                <p class="mt-1 md:mt-8">
+                                    <a href="#" class="px-2 md:px-4 py-1 md:px-2 text-[8px] md:text-[24px] text-black font-semibold bg-white rounded-full hover:text-white hover:bg-black">Shop</a>
+                                </p>
+                            </article>
+                        </div>
+                        <div class="container relative col-span-1">
+                            <img src="./images/Haaland-images/madready-haaland-1.webp" alt="Erling Haaland in action" class="w-full h-full object-cover">
+                            <article class="px-2 md:px-6 absolute bottom-4 md:bottom-12 left-0 right-0 leading-[1] md:leading-[1.5]">
+                                <h3 class="text-[12px] md:text-[24px] font-semibold text-white">
+                                    Erling Haaland
+                                </h3>
+                                <p class="text-[8px] md:text-[16px] text-white hidden md:block">A powerhouse of strength, speed, and clinical finishing on the pitch.</p>
+                                <p class="text-[12px] md:text-[24px] font-semibold text-white hidden md:block">Nike Phantom GX Elite FG</p>
+                                <p class="mt-1 md:mt-8 hidden md:block"></p>
+                                    <a href="#" class="px-2 md:px-4 py-1 md:px-2 text-[8px] md:text-[24px] text-black font-semibold bg-white rounded-full hover:text-white hover:bg-black">Shop</a>
+                                </p>
+                            </article>
+                        </div>
+                    </section>
+                </section>
+        </section>
+
+    </main>
+
+    <footer class="w-full h-auto bg-[#f5f5f5] mx-auto mt-10 md:mt-50 py-4 md:py-6 px-[30px]" >
+        <section class="flex flex-col md:flex-row md:justify-between w-full gap-8 md:gap-0">
+            <!-- Organize by -->
+            <div class="flex flex-col items-center text-center mb-6 md:mb-0">
+                <h3 class="font-semibold text-[1rem] md:text-[20px] mb-2">Organized by</h3>
+                <a href="https://www.cstad.edu.kh/"><img src="images/logo/ISTAD_logo.jpg" alt="ISTAD logo" class="rounded-full w-[60px] md:w-[120px] mb-2 transition-transform duration-300 ease-in-out hover:scale-110"></a>
+                <span class="text-[14px] text-[#545454] md:text-[1rem]">Institute of Science and Technology Advanced Development - ISTAD </span>
+            </div>
+            <!-- G2 E-commerce -->
+            <div class="flex flex-col items-center text-center mb-6 md:mb-0">
+                <h3 class="font-semibold text-[1rem] md:text-[20px] mb-2">G2 E-commerce</h3>
+                <a href="index.html"><img src="images/logo/Kick_black_logo.jpg" alt="Kick logo" class="rounded-full w-[60px] md:w-[120px] mb-2 transition-transform duration-300 ease-in-out hover:scale-110"></a>
+                <span class="text-[14px] text-[#545454]">KICK</span>
+            </div>
+            <!-- Quick Link -->
+            <div class="flex flex-col items-center text-center mb-6 md:mb-0">
+                <h3 class="text-[20px] font-semibold text-black mb-2">Quick Links</h3>
+                <a href="about_us.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454] mb-1">About Us</a>
+                <a href="contact.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454] mb-1">Contact</a>
+                <a href="sign_in.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454]">Sign in</a>
+            </div>
+            <!-- Feature -->
+            <div class="flex flex-col items-center text-center mb-6 md:mb-0">
+                <h3 class="text-[20px] font-semibold text-black mb-2">
+                    <a href="feature.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Feature</a>
+                </h3>
+                <a href="nike.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454] mb-1">Nike</a>
+                <a href="adidas.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454] mb-1">Adidas</a>
+                <a href="puma.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454] mb-1">Puma</a>
+                <a href="other_product.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454]">Others</a>
+            </div>
+            <!-- Collection -->
+            <div class="flex flex-col items-center text-center">
+                <h3 class="text-[20px] font-semibold text-black mb-2">
+                    <a href="collection.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Collection</a>
+                </h3>
+                <a href="ronaldo.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454] mb-1">Ronaldo</a>
+                <a href="messi.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454] mb-1">Messi</a>
+                <a href="neymar.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454] mb-1">Neymar</a>
+                <a href="other_collection.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454]">Others</a>
+            </div>
+            <!-- Connection -->
+            <div class="flex flex-col items-center text-center">
+                <h3 class="text-[20px] font-semibold text-black mb-2">
+                    Connect with us
+                </h3>
+                <div class="flex gap-4 md:gap-6 text-[#545454]">
+                    <a href="https://www.facebook.com/srospheaktra756" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-black"><span class="sr-only">Facebook</span><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://t.me/Jukkiiee" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-black"><span class="sr-only">Telegram</span><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://github.com/sros-pheaktra" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-black"><span class="sr-only">GitHub</span><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/pheaktra-sros-6a8ab7373/" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-black"><span class="sr-only">Linkedin</span><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+            <!-- copyright section -->
+        <hr class="border-t-[1px] border-[#e5e5e5] my-4 md:my-8 w-full">
+        <section class="mt-5">
+            <p class="text-[12px] md:text-[1rem] text-[#545454] text-center">&copy Copyright KICK. All Right Reserved.</p>
+        </section>
+    </footer>
+</body>
+</html>

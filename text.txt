@@ -1,0 +1,6 @@
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+
+  --color-primary: #ffffff;
+  --color-secondary: #000000;
+  --color-accent: #f5f5f5;
+  --color-accent-2: #545454;
