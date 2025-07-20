@@ -29,7 +29,7 @@
                 </ul>
             </div>
             <div>
-                <ul class="flex gap-2 md:gap-4 font-semibold text-[1rem]">
+                <ul class="flex gap-2 md:gap-4 font-semibold text-[1rem] text-[#21242A]">
                     <li><a href="about_us.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">About Us</a></li>
                     <li><a href="contact.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Contact</a></li>
                     <li><a href="sign_in.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Sign in</a></li>
@@ -45,13 +45,15 @@
                 <li><a href="collection.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Collection</a></li>
                 <li><a href="accessory.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Accessory</a></li>
             </ul>
-            <div class="relative flex gap-4 items-center">
-                <div>
+            <div class=" flex gap-4 items-center">
+                <div class="relative w-full">
                     <label for="search-input" class="sr-only">Search</label>
                     <input type="text" id="search-input" name="search" placeholder="Search" class="pl-8 py-2 bg-[#f5f5f5] rounded-full focus:outline-1 placeholder:text-[#545454]">
-                    <i class="fas fa-search absolute top-3 left-3"></i>
+                    <button type="submit" aria-label="Search" class="absolute top-1/2 right-4 -translate-y-1/2 outline-none cursor-pointer text-[#545454] hover:text-[#21242A] transition-colors duration-200">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </div>
-                <div class="flex gap-4 text-black text-[1.5rem]">
+                <div class="flex gap-4 text-[#21242A] text-[1.5rem]">
                     <a href="favorite.html" class="transition-transform duration-300 ease-in-out hover:scale-105"><span class="sr-only">favorite</span><i class="fa-solid fa-heart hover:text-[#545454]" title="favorite"></i></a>
                     <a href="cart.html" class="transition-transform duration-300 ease-in-out hover:scale-105"><span class="sr-only">cart</span><i class="fa-solid fa-cart-shopping hover:text-[#545454]" title="cart"></i></a>
                 </div>
@@ -66,17 +68,17 @@
     <main class="pt-39 md:pt-24">
         <section class="w-full relative ">
             <img src="images/nike-images/cristiano-ronaldo-nike-players-5k-xp.jpg" alt="Ronaldo Messi and Neymar" class="w-full h-auto">
-            <article class="absolute w-full bottom-2 md:bottom-70 text-center leading-[1] text-white">
-                <p class="font-semibold text-[12px] md:text-[3rem]  ">Choose Your Gear</p>
+            <article class="absolute w-full bottom-2 md:bottom-50 text-center leading-[1] text-white">
+                <p class="font-semibold text-[12px] md:text-[2rem]  ">Choose Your Gear</p>
                 <h1 class="text-[3rem] md:text-[120px] font-bold">Start Your Journey</h1>
-                <p class="font-semibold text-[12px] md:text-[3rem] ">Create An Impact On The Field</p>
+                <p class="font-semibold text-[12px] md:text-[2rem] ">Create An Impact On The Field</p>
             </article>
         </section>
 
         <!-- Flex Section -->
-        <section class="w-full mt-10 md:mt-20 mx-auto w-full px-[40px] md:px-[120px]">
+        <section class="w-full mt-10 md:mt-40 mx-auto w-full px-[40px] md:px-[120px]">
             <div class="flex flex-col md:flex-row justify-between md:gap-10 items-center text-center md:text-left">
-                <h1 class="text-[60px] leading-[1.2] md:text-[120px] font-bold mb-4 md:w-1/2">
+                <h1 class="text-[60px] leading-[1.2] md:text-[120px] text-[#21242A] font-bold mb-4 md:w-1/2">
                     Where Every Star Begins to Shine
                 </h1>
                 <article class="md:w-2/5">
@@ -86,7 +88,7 @@
                     <p class="text-base md:text-[1.5rem] text-[#545454] mb-4">
                         Explore our curated selection of cleats, apparel, and accessories designed for performance and style. Stay ahead of the game with new arrivals, best sellers, and limited-edition releases. At Kick, we believe every player deserves the best—gear up and make your mark today!
                     </p>
-                    <a href="feature.html" class="inline-block text-base md:text-[1.5rem] px-6 py-2 bg-black text-white rounded-full font-semibold hover:bg-[#222] transition-colors duration-300">
+                    <a href="feature.html" class="inline-block text-base md:text-[1.5rem] px-6 py-2 bg-[#21242A] text-white rounded-full font-semibold hover:bg-gray-800 transition-colors duration-300">
                         Explore Features
                     </a>
                 </article>
@@ -95,9 +97,9 @@
         </section>
 
         <!-- Brand selection -->
-        <section class="w-full mt-10 md:mt-20 mx-auto w-full px-[40px] md:px-[120px]">
+        <section class="w-full mt-10 md:mt-60 mx-auto w-full px-[40px] md:px-[120px]">
             <article>
-                <h2 class="text-[1rem] md:text-[2rem] text-black font-semibold ">
+                <h2 class="text-[1rem] md:text-[2rem] text-[#21242A] font-semibold ">
                     Various Brands Selection
                 </h2>
                 <p class="text-[12px] md:text-[1.5rem] text-[#545454]">Explore our curated selection of top brands.</p>
@@ -133,16 +135,16 @@
             <!-- nav to category secton -->
             <section class="flex justify-center md:justify-start gap-2 md:gap-4 text-[12px] md:text-[1.5rem] text-[#545454] ">
                 <!-- links -->
-                <span><a href="#new-arrival" class="px-4 md:px-6 py-1 md:py-2 border-1 border-[#545454] hover:text-[white] hover:bg-black">New Arrival</a></span>
-                <span><a href="#best-seller" class="px-4 md:px-6 py-1 md:py-2 border-1  border-[#545454] hover:text-[white] hover:bg-black">Best Seller</a></span>
-                <span><a href="#collection" class="px-4 md:px-6  py-1 md:py-2 border-1 border-[#545454] hover:text-[white] hover:bg-black">Collection</a></span>
+                <span><a href="#new-arrival" class="px-4 md:px-6 py-1 md:py-2 border-1 border-[#545454] hover:text-[white] hover:bg-[#21242A]">New Arrival</a></span>
+                <span><a href="#best-seller" class="px-4 md:px-6 py-1 md:py-2 border-1  border-[#545454] hover:text-[white] hover:bg-[#21242A]">Best Seller</a></span>
+                <span><a href="#collection" class="px-4 md:px-6  py-1 md:py-2 border-1 border-[#545454] hover:text-[white] hover:bg-[#21242A]">Collection</a></span>
             </section>
 
 
             <!-- new arrival -->
             <section id="new-arrival" class="mt-10 md:mt-20">
                 <article >
-                        <h2 class="text-[1rem] md:text-[2rem] text-black font-semibold ">
+                        <h2 class="text-[1rem] md:text-[2rem] text-[#21242A] font-semibold ">
                             New Arrival
                         </h2>
                         <p class="text-[12px] md:text-[1.5rem] text-[#545454]">Be the first to lace these up!</p>
@@ -179,7 +181,7 @@
 
 
                                 <!-- dak random ban or check prize vea tam google  -->
-                                <p class="text-[1rem] md:text-[24px] text-black">
+                                <p class="text-[1rem] md:text-[24px] text-[#21242A]">
                                     $290
                                 </p>
                                 <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
@@ -217,7 +219,7 @@
 
 
                                 <!-- dak random ban or check prize vea tam google  -->
-                                <p class="text-[1rem] md:text-[24px] text-black">
+                                <p class="text-[1rem] md:text-[24px] text-[#21242A]">
                                     $270
                                 </p>
                                 <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
@@ -252,7 +254,7 @@
 
 
                                 <!-- dak random ban or check prize vea tam google  -->
-                                <p class="text-[1rem] md:text-[24px] text-black">
+                                <p class="text-[1rem] md:text-[24px] text-[#21242A]">
                                     $280
                                 </p>
                                 <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
@@ -287,7 +289,7 @@
 
 
                                 <!-- dak random ban or check prize vea tam google  -->
-                                <p class="text-[1rem] md:text-[24px] text-black">
+                                <p class="text-[1rem] md:text-[24px] text-[#21242A]">
                                     $250
                                 </p>
                                 <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
@@ -322,7 +324,7 @@
 
 
                                 <!-- dak random ban or check prize vea tam google  -->
-                                <p class="text-[1rem] md:text-[24px] text-black">
+                                <p class="text-[1rem] md:text-[24px] text-[#21242A]">
                                     $270
                                 </p>
                                 <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
@@ -357,7 +359,7 @@
 
 
                                 <!-- dak random ban or check prize vea tam google  -->
-                                <p class="text-[1rem] md:text-[24px] text-black">
+                                <p class="text-[1rem] md:text-[24px] text-[#21242A]">
                                     $260
                                 </p>
                                 <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
@@ -390,7 +392,7 @@
 
 
                                 <!-- dak random ban or check prize vea tam google  -->
-                                <p class="text-[1rem] md:text-[24px] text-black">
+                                <p class="text-[1rem] md:text-[24px] text-[#21242A]">
                                     $240
                                 </p>
                                 <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
@@ -423,7 +425,7 @@
 
 
                                 <!-- dak random ban or check prize vea tam google  -->
-                                <p class="text-[1rem] md:text-[24px] text-black">
+                                <p class="text-[1rem] md:text-[24px] text-[#21242A]">
                                     $250
                                 </p>
                                 <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
@@ -436,7 +438,7 @@
             <!-- Best Seller -->
             <section id="best-seller" class="mt-10 md:mt-40">
                 <article >
-                        <h2 class="text-[1rem] md:text-[2rem] text-black font-semibold ">
+                        <h2 class="text-[1rem] md:text-[2rem] text-[#21242A] font-semibold ">
                             Best Seller
                         </h2>
                         <p class="text-[12px] md:text-[1.5rem] text-[#545454]">Everyone #1 choice!</p>
@@ -473,7 +475,7 @@
 
 
                                 <!-- dak random ban or check prize vea tam google  -->
-                                <p class="text-[1rem] md:text-[24px] text-black">
+                                <p class="text-[1rem] md:text-[24px] text-[#21242A]">
                                     $320
                                 </p>
                                 <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
@@ -511,7 +513,7 @@
 
 
                                 <!-- dak random ban or check prize vea tam google  -->
-                                <p class="text-[1rem] md:text-[24px] text-black">
+                                <p class="text-[1rem] md:text-[24px] text-[#21242A]">
                                     $300
                                 </p>
                                 <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
@@ -546,7 +548,7 @@
 
 
                                 <!-- dak random ban or check prize vea tam google  -->
-                                <p class="text-[1rem] md:text-[24px] text-black">
+                                <p class="text-[1rem] md:text-[24px] text-[#21242A]">
                                     $280
                                 </p>
                                 <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
@@ -581,7 +583,7 @@
 
 
                                 <!-- dak random ban or check prize vea tam google  -->
-                                <p class="text-[1rem] md:text-[24px] text-black">
+                                <p class="text-[1rem] md:text-[24px] text-[#21242A]">
                                     $310
                                 </p>
                                 <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
@@ -616,7 +618,7 @@
 
 
                                 <!-- dak random ban or check prize vea tam google  -->
-                                <p class="text-[1rem] md:text-[24px] text-black">
+                                <p class="text-[1rem] md:text-[24px] text-[#21242A]">
                                     $270
                                 </p>
                                 <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
@@ -651,7 +653,7 @@
 
 
                                 <!-- dak random ban or check prize vea tam google  -->
-                                <p class="text-[1rem] md:text-[24px] text-black">
+                                <p class="text-[1rem] md:text-[24px] text-[#21242A]">
                                     $280
                                 </p>
                                 <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
@@ -684,7 +686,7 @@
 
 
                                 <!-- dak random ban or check prize vea tam google  -->
-                                <p class="text-[1rem] md:text-[24px] text-black">
+                                <p class="text-[1rem] md:text-[24px] text-[#21242A]">
                                     $310
                                 </p>
                                 <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
@@ -717,7 +719,7 @@
 
 
                                 <!-- dak random ban or check prize vea tam google  -->
-                                <p class="text-[1rem] md:text-[24px] text-black">
+                                <p class="text-[1rem] md:text-[24px] text-[#21242A]">
                                     $270
                                 </p>
                                 <button type="button" class="text-[1rem] md:text-[24px] text text-[#e5e5e5] hover:text-red-500 focus:text-red-500"><span class="sr-only">favorite</span><i class="fa-solid fa-heart"></a></i></p>
@@ -730,7 +732,7 @@
         <!--Collection  -->
         <section id="collection" class="mt-10 md:mt-40 px-[40px] md:px-[120px]">
             <article class="px-[40px] md:px-[120px]">
-                    <h2 class="text-[1rem] md:text-[2rem] text-black font-semibold ">
+                    <h2 class="text-[1rem] md:text-[2rem] text-[#21242A] font-semibold ">
                         Collection
                     </h2>
                     <p class="text-[12px] md:text-[1.5rem] text-[#545454]">Worn by legends, made for you to be one.</p>
@@ -747,7 +749,7 @@
                             </h3>
                             <p class="text-[8px] md:text-[16px] text-white hidden md:block">The embodiment of hard work, ambitionp, and footballing greatness.</p>
                             <p class="text-[12px] md:text-[24px] font-semibold text-white hidden md:block">Nike Mercurial Superfly V FG</p>
-                            <p class="mt-1 md:mt-8"><a href="#" class="px-2 md:px-4 py-1 md:px-2 text-[8px] md:text-[24px] text-black font-semibold bg-white rounded-full hover:text-white hover:bg-black">Shop</a></p>
+                            <p class="mt-1 md:mt-8"><a href="#" class="px-2 md:px-4 py-1 md:px-2 text-[8px] md:text-[24px] text-[#21242A] font-semibold bg-white rounded-full hover:text-white hover:bg-[#21242A]">Shop</a></p>
                         </article>
                         
 
@@ -760,7 +762,7 @@
                             </h3>
                             <p class="text-[8px] md:text-[16px] text-white hidden md:block">The silent magician, painting the game with pure genius and grace.</p>
                             <p class="text-[12px] md:text-[24px] font-semibold text-white hidden md:block">Adidas X Crazyfast Messi FG</p>
-                            <p class="mt-1 md:mt-8"><a href="#" class="px-2 md:px-4 py-1 md:px-2 text-[8px] md:text-[24px] text-black font-semibold bg-white rounded-full hover:text-white hover:bg-black">Shop</a></p>
+                            <p class="mt-1 md:mt-8"><a href="#" class="px-2 md:px-4 py-1 md:px-2 text-[8px] md:text-[24px] text-[#21242A] font-semibold bg-white rounded-full hover:text-white hover:bg-[#21242A]">Shop</a></p>
                         </article>
                         
 
@@ -773,7 +775,7 @@
                             </h3>
                             <p class="text-[8px] md:text-[16px] text-white hidden md:block">The showman—where football meets dance, style, and spark.</p>
                             <p class="text-[12px] md:text-[24px] font-semibold text-white hidden md:block">PUMA FUTURE Z 1.1 FG</p>
-                            <p class="mt-1 md:mt-8"><a href="#" class="px-2 md:px-4 py-1 md:px-2 text-[8px] md:text-[24px] text-black font-semibold bg-white rounded-full hover:text-white hover:bg-black">Shop</a></p>
+                            <p class="mt-1 md:mt-8"><a href="#" class="px-2 md:px-4 py-1 md:px-2 text-[8px] md:text-[24px] text-[#21242A] font-semibold bg-white rounded-full hover:text-white hover:bg-[#21242A]">Shop</a></p>
                         </article>
                     </div>
                     <div class="container relative col-span-2">
@@ -785,7 +787,7 @@
                             <p class="text-[8px] md:text-[16px] text-white hidden md:block">The next generation of speed, skill, and football stardom.</p>
                             <p class="text-[12px] md:text-[24px] font-semibold text-white hidden md:block">Nike Air Zoom Mercurial Superfly 9 Elite FG</p>
                             <p class="mt-1 md:mt-8">
-                                <a href="#" class="px-2 md:px-4 py-1 md:px-2 text-[8px] md:text-[24px] text-black font-semibold bg-white rounded-full hover:text-white hover:bg-black">Shop</a>
+                                <a href="#" class="px-2 md:px-4 py-1 md:px-2 text-[8px] md:text-[24px] text-[#21242A] font-semibold bg-white rounded-full hover:text-white hover:bg-[#21242A]">Shop</a>
                             </p>
                         </article>
                     </div>
@@ -798,7 +800,7 @@
                             <p class="text-[8px] md:text-[16px] text-white hidden md:block">A powerhouse of strength, speed, and clinical finishing on the pitch.</p>
                             <p class="text-[12px] md:text-[24px] font-semibold text-white hidden md:block">Nike Phantom GX Elite FG</p>
                             <p class="mt-1 md:mt-8 hidden md:block"></p>
-                                <a href="#" class="px-2 md:px-4 py-1 md:px-2 text-[8px] md:text-[24px] text-black font-semibold bg-white rounded-full hover:text-white hover:bg-black">Shop</a>
+                                <a href="#" class="px-2 md:px-4 py-1 md:px-2 text-[8px] md:text-[24px] text-[#21242A] font-semibold bg-white rounded-full hover:text-white hover:bg-[#21242A]">Shop</a>
                             </p>
                         </article>
                     </div>
@@ -808,7 +810,7 @@
     </main>
 
     <footer class="w-full h-auto bg-[#f5f5f5] mx-auto mt-10 md:mt-50 py-4 md:py-6 px-[30px]" >
-        <section class="flex flex-col md:flex-row md:justify-between w-full gap-8 md:gap-0">
+        <section class="flex flex-col md:flex-row md:justify-between w-full gap-8 md:gap-0 text-[#21242A]">
             <!-- Organize by -->
             <div class="flex flex-col items-center text-center mb-6 md:mb-0">
                 <h3 class="font-semibold text-[1rem] md:text-[20px] mb-2">Organized by</h3>
@@ -823,14 +825,14 @@
             </div>
             <!-- Quick Link -->
             <div class="flex flex-col items-center text-center mb-6 md:mb-0">
-                <h3 class="text-[20px] font-semibold text-black mb-2">Quick Links</h3>
+                <h3 class="text-[20px] font-semibold text-[#21242A] mb-2">Quick Links</h3>
                 <a href="about_us.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454] mb-1">About Us</a>
                 <a href="contact.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454] mb-1">Contact</a>
                 <a href="sign_in.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454]">Sign in</a>
             </div>
             <!-- Feature -->
             <div class="flex flex-col items-center text-center mb-6 md:mb-0">
-                <h3 class="text-[20px] font-semibold text-black mb-2">
+                <h3 class="text-[20px] font-semibold text-[#21242A] mb-2">
                     <a href="feature.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Feature</a>
                 </h3>
                 <a href="nike.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454] mb-1">Nike</a>
@@ -840,7 +842,7 @@
             </div>
             <!-- Collection -->
             <div class="flex flex-col items-center text-center">
-                <h3 class="text-[20px] font-semibold text-black mb-2">
+                <h3 class="text-[20px] font-semibold text-[#21242A] mb-2">
                     <a href="collection.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Collection</a>
                 </h3>
                 <a href="ronaldo.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454] mb-1">Ronaldo</a>
@@ -850,14 +852,14 @@
             </div>
             <!-- Connection -->
             <div class="flex flex-col items-center text-center">
-                <h3 class="text-[20px] font-semibold text-black mb-2">
+                <h3 class="text-[20px] font-semibold text-[#21242A] mb-2">
                     Connect with us
                 </h3>
                 <div class="flex gap-4 md:gap-6 text-[#545454]">
-                    <a href="https://www.facebook.com/srospheaktra756" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-black"><span class="sr-only">Facebook</span><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://t.me/Jukkiiee" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-black"><span class="sr-only">Telegram</span><i class="fa-brands fa-telegram"></i></a>
-                    <a href="https://github.com/sros-pheaktra" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-black"><span class="sr-only">GitHub</span><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/pheaktra-sros-6a8ab7373/" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-black"><span class="sr-only">Linkedin</span><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/srospheaktra756" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-[#21242A]"><span class="sr-only">Facebook</span><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://t.me/Jukkiiee" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-[#21242A]"><span class="sr-only">Telegram</span><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://github.com/sros-pheaktra" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-[#21242A]"><span class="sr-only">GitHub</span><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/pheaktra-sros-6a8ab7373/" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-[#21242A]"><span class="sr-only">Linkedin</span><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </section>

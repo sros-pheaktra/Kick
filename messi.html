@@ -29,7 +29,7 @@
                 </ul>
             </div>
             <div>
-                <ul class="flex gap-2 md:gap-4 font-semibold text-[1rem]">
+                <ul class="flex gap-2 md:gap-4 font-semibold text-[1rem] text-[#21242A]">
                     <li><a href="about_us.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">About Us</a></li>
                     <li><a href="contact.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Contact</a></li>
                     <li><a href="sign_in.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Sign in</a></li>
@@ -45,13 +45,15 @@
                 <li><a href="collection.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Collection</a></li>
                 <li><a href="accessory.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Accessory</a></li>
             </ul>
-            <div class="relative flex gap-4 items-center">
-                <div>
+            <div class=" flex gap-4 items-center">
+                <div class="relative w-full">
                     <label for="search-input" class="sr-only">Search</label>
                     <input type="text" id="search-input" name="search" placeholder="Search" class="pl-8 py-2 bg-[#f5f5f5] rounded-full focus:outline-1 placeholder:text-[#545454]">
-                    <i class="fas fa-search absolute top-3 left-3"></i>
+                    <button type="submit" aria-label="Search" class="absolute top-1/2 right-4 -translate-y-1/2 outline-none cursor-pointer text-[#545454] hover:text-[#21242A] transition-colors duration-200">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </div>
-                <div class="flex gap-4 text-black text-[1.5rem]">
+                <div class="flex gap-4 text-[#21242A] text-[1.5rem]">
                     <a href="favorite.html" class="transition-transform duration-300 ease-in-out hover:scale-105"><span class="sr-only">favorite</span><i class="fa-solid fa-heart hover:text-[#545454]" title="favorite"></i></a>
                     <a href="cart.html" class="transition-transform duration-300 ease-in-out hover:scale-105"><span class="sr-only">cart</span><i class="fa-solid fa-cart-shopping hover:text-[#545454]" title="cart"></i></a>
                 </div>
@@ -459,13 +461,8 @@
         </section>
     </main>
 
-    <!-- random quote -->
-    <!-- <div class="w-full h-[100px] md:h-[10px] mt-10 md:mt-40 mb- text-right relative">
-        <p class="absolute left-30 right-10 md:right-0 top-0 text-[1rem] text-[#545454] md:text-[24px]"><i>"In football, every second counts—Nike doesn't just gear you up, it pushes you beyond your limits, where legends are made."</i></p>
-    </div> -->
-        <!-- footer -->
     <footer class="w-full h-auto bg-[#f5f5f5] mx-auto mt-10 md:mt-50 py-4 md:py-6 px-[30px]" >
-        <section class="flex flex-col md:flex-row md:justify-between w-full gap-8 md:gap-0">
+        <section class="flex flex-col md:flex-row md:justify-between w-full gap-8 md:gap-0 text-[#21242A]">
             <!-- Organize by -->
             <div class="flex flex-col items-center text-center mb-6 md:mb-0">
                 <h3 class="font-semibold text-[1rem] md:text-[20px] mb-2">Organized by</h3>
@@ -480,14 +477,14 @@
             </div>
             <!-- Quick Link -->
             <div class="flex flex-col items-center text-center mb-6 md:mb-0">
-                <h3 class="text-[20px] font-semibold text-black mb-2">Quick Links</h3>
+                <h3 class="text-[20px] font-semibold text-[#21242A] mb-2">Quick Links</h3>
                 <a href="about_us.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454] mb-1">About Us</a>
                 <a href="contact.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454] mb-1">Contact</a>
                 <a href="sign_in.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454]">Sign in</a>
             </div>
             <!-- Feature -->
             <div class="flex flex-col items-center text-center mb-6 md:mb-0">
-                <h3 class="text-[20px] font-semibold text-black mb-2">
+                <h3 class="text-[20px] font-semibold text-[#21242A] mb-2">
                     <a href="feature.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Feature</a>
                 </h3>
                 <a href="nike.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454] mb-1">Nike</a>
@@ -497,7 +494,7 @@
             </div>
             <!-- Collection -->
             <div class="flex flex-col items-center text-center">
-                <h3 class="text-[20px] font-semibold text-black mb-2">
+                <h3 class="text-[20px] font-semibold text-[#21242A] mb-2">
                     <a href="collection.html" class="hover:underline underline-offset-4 transition-all duration-300 ease-in-out">Collection</a>
                 </h3>
                 <a href="ronaldo.html" class="text-[1rem] md:text-[20px] hover:underline underline-offset-4 text-[#545454] mb-1">Ronaldo</a>
@@ -507,14 +504,14 @@
             </div>
             <!-- Connection -->
             <div class="flex flex-col items-center text-center">
-                <h3 class="text-[20px] font-semibold text-black mb-2">
+                <h3 class="text-[20px] font-semibold text-[#21242A] mb-2">
                     Connect with us
                 </h3>
                 <div class="flex gap-4 md:gap-6 text-[#545454]">
-                    <a href="https://www.facebook.com/srospheaktra756" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-black"><span class="sr-only">Facebook</span><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://t.me/Jukkiiee" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-black"><span class="sr-only">Telegram</span><i class="fa-brands fa-telegram"></i></a>
-                    <a href="https://github.com/sros-pheaktra" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-black"><span class="sr-only">GitHub</span><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/pheaktra-sros-6a8ab7373/" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-black"><span class="sr-only">Linkedin</span><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/srospheaktra756" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-[#21242A]"><span class="sr-only">Facebook</span><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://t.me/Jukkiiee" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-[#21242A]"><span class="sr-only">Telegram</span><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://github.com/sros-pheaktra" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-[#21242A]"><span class="sr-only">GitHub</span><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/pheaktra-sros-6a8ab7373/" class="text-[1rem] md:text-[24px] transition-transform duration-300 ease-in-out hover:scale-105 hover:text-[#21242A]"><span class="sr-only">Linkedin</span><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </section>
