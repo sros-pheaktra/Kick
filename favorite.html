@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Do ah nis pg -->
-    <title>Nike Product</title>
+    <title>KICK - Favorite List</title>
     <!-- Page icon -->
     <link rel="shortcut icon" href="images/logo/Kick_black_logo.jpg" type="image/x-icon">
 
@@ -64,16 +64,146 @@
     </header>
 
     <!-- Main section -->
-    <main class="pt-39 md:pt-">
+    <main class="pt-39 md:pt-24">
 
         <!-- no item displat -->
-        <section class="px-[40px] md:px-[120px] flex flex-col items-center justify-center h-[80vh] md:h-[90] text-center ">
-            <img src="images/logo/empty-box.svg" alt="No item in cart" class="w-[200px] md:w-lg h-auto mb-4 md:mb-10">
-            <h1 class="text-[1.5rem] md:text-[3rem] font-bold">Your favorites list is empty</h1>
-            <p class="text-[1rem] md:text-[1.5rem] text-[#545454]">Add items that you like to your favorites list. Review them anytime and easily move them to the next step.</p>
-            <a href="index.html" class="mt-4 md:mt-6 px-6 py-2 bg-black text-white rounded-full hover:bg-[#545454] transition-all duration-300 ease-in-out">Go to Shop</a>
-        </section>
+        <!-- <section class="flex flex-col items-center justify-center h-[80vh] md:h-[90] text-center">
+            <img src="images/logo/no-item-in-the-shopping-cart-add-product-click-to-shop-now-concept-illustration-flat-design-eps10-modern-graphic-element-for-landing-page-empty-state-ui-infographic-icon-vector.jpg" alt="No item in cart" class="w-full max-w-2xl h-auto">
+            <h1 class="text-[1.5rem] md:text-[3rem] font-bold">No Porduct In The Cart Yet</h1>
+            <p class="text-[1rem] md:text-[1.5rem] text-[#545454]">Add items that you like to your cart.</p>
+            <a href="index.html" class="mt-4 md:mt-6 px-6 py-2 bg-black text-white rounded-full hover:bg-[#545454] transition-all duration-300 ease-in-out text-[1.5rem]">Go to Shop</a>
+        </section> -->
 
+        <section class="mt-10 md:mt-[120px] w-full px-[40px] md:px-[120px]">
+            <!-- Item detail section -->
+            <section class="w-full h-auto">
+                <article class="flex justify-between text-[#21242A] text-[1.5rem] md:text-[2rem] font-semibold mb-4 md:mb-6">
+                    <h2>Favorite List</h2>
+                </article> 
+                <!-- product cart -->
+                <section class="grid grid-cols-1 md:grid-cols-4 md:gap-6 mb-2 md:mb-4 py-4 md:py-6 border-t-1 border-[#e5e5e5]">
+                    <!--Item image -->
+                    <div class="w-full h-auto mb-4">
+                        <img src="images/Mbappe-images/ZM+SUPERFLY+10+ELITE+KM+FG.jpg" alt="Nike Mercurial Superfly 10 Elite KM FG" class="w-full h-auto ">
+                    </div>
+                    <!-- Item detail -->
+                    <div class="flex flex-col justify-start mb-2">
+                        <h2 class="text-[#21242A] text-[1.5rem] font-semibold mb-2">Product details</h2>
+                        <!-- detail  -->
+                        <div class="text-[1rem] md:text-[1.2rem] text-[#545454]">
+                            <h3 class="text-[1.2rem] text-[#21242A] font-semibold">Nike Mercurial Superfly 10 Elite "Kylian Mbappé" FG</h3>
+                            <p>Firm-Ground High-Top Soccer Cleats</p>
+                            <p>Grand Purple/Pale Ivory</p>
+                            <p>Size 42</p>
+                        </div>
+                    </div>
+                    <!-- Item quantity-->
+                    <div class="flex flex-col justify-start text-center text-start md:items-center mb-2">
+                        <h2 class="text-[#21242A] text-[1.5rem] font-semibold mb-2 md:none">Quantiy</h2>
+                        <div class="flex items-center gap-4">
+                            <button type="button" title="Decrease quantity" aria-label="Decrease quantity" class="px-2 py-1 bg-[#f5f5f5] rounded-full hover:bg-[#e0e0e0] transition-colors duration-200">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <span class="text-[1rem] md:text-[1.2rem]">1</span>
+                            <button type="button" title="Increase quantity" aria-label="Increase quantity" class="px-2 py-1 bg-[#f5f5f5] rounded-full hover:bg-[#e0e0e0] transition-colors duration-200">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Item price -->
+                    <div class="flex flex-col justify-start mb-2 text-start md:items-center ">
+                        <h2 class="text-[#21242A] text-[1.5rem] font-semibold mb-2">Total</h2>
+                        <p class="text-[1rem] md:text-[1.2rem] text-[#545454]">$290.00</p>
+                    </div>
+                    <div class="col-span-1 md:col-span-4 flex flex-row gap-10 justify-between md:justify-end mb-2 text-start md:items-center ">
+                        <span class="text-[#545454] text-[1.5rem] font-semibold mb-2 hover:text-[#21242A]"><i class="fa-solid fa-cart-shopping" title="Add to cart"></i></span>
+                        <span class="text-[#545454] text-[1.5rem] font-semibold mb-2 hover:text-[#21242A]"><i class="fa-solid fa-trash" title="Remove item"></i></span>
+                        
+                    </div>
+                </section>
+                <section class="grid grid-cols-1 md:grid-cols-4 md:gap-6 mb-2 md:mb-4 py-4 md:py-6 border-t-1 border-[#e5e5e5]">
+                    <!--Item image -->
+                    <div class="w-full h-auto mb-4">
+                        <img src="images/accessories/U+NK+ELITE+CUSH+CREW+1PR.jpg" alt="Nike Elite 2.0" class="w-full h-auto ">
+                    </div>
+                    <!-- Item detail -->
+                    <div class="flex flex-col justify-start mb-2">
+                        <h2 class="text-[#21242A] text-[1.5rem] font-semibold mb-2">Product details</h2>
+                        <!-- detail  -->
+                        <div class="text-[1rem] md:text-[1.2rem] text-[#545454]">
+                            <h3 class="text-[1.2rem] text-[#21242A] font-semibold">Nike Elite 2.0</h3>
+                            <p>Cushioned Crew Socks (1 Pair)</p>
+                            <p>White/Navy</p>
+                            <p>Size L</p>
+                        </div>
+                    </div>
+                    <!-- Item quantity-->
+                    <div class="flex flex-col justify-start text-center text-start md:items-center mb-2">
+                        <h2 class="text-[#21242A] text-[1.5rem] font-semibold mb-2 md:none">Quantiy</h2>
+                        <div class="flex items-center gap-4">
+                            <button type="button" title="Decrease quantity" aria-label="Decrease quantity" class="px-2 py-1 bg-[#f5f5f5] rounded-full hover:bg-[#e0e0e0] transition-colors duration-200">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <span class="text-[1rem] md:text-[1.2rem]">1</span>
+                            <button type="button" title="Increase quantity" aria-label="Increase quantity" class="px-2 py-1 bg-[#f5f5f5] rounded-full hover:bg-[#e0e0e0] transition-colors duration-200">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Item price -->
+                    <div class="flex flex-col justify-start mb-2 text-start md:items-center ">
+                        <h2 class="text-[#21242A] text-[1.5rem] font-semibold mb-2">Total</h2>
+                        <p class="text-[1rem] md:text-[1.2rem] text-[#545454]">$9.40</p>
+                    </div>
+                    <div class="col-span-1 md:col-span-4 flex flex-row gap-10 justify-between md:justify-end mb-2 text-start md:items-center ">
+                        <span class="text-[#545454] text-[1.5rem] font-semibold mb-2 hover:text-[#21242A]"><i class="fa-solid fa-cart-shopping" title="Add to cart"></i></span>
+                        <span class="text-[#545454] text-[1.5rem] font-semibold mb-2 hover:text-[#21242A]"><i class="fa-solid fa-trash" title="Remove item"></i></span>
+                        
+                    </div>
+                </section>
+                <section class="grid grid-cols-1 md:grid-cols-4 md:gap-6 mb-2 md:mb-4 py-4 md:py-6 border-t-1 border-[#e5e5e5]">
+                    <!--Item image -->
+                    <div class="w-full h-auto mb-4">
+                        <img src="images/accessories/NK+MERC+LITE+NOCSAE_2.jpg" alt="Nike Mercurial Lite" class="w-full h-auto ">
+                    </div>
+                    <!-- Item detail -->
+                    <div class="flex flex-col justify-start mb-2">
+                        <h2 class="text-[#21242A] text-[1.5rem] font-semibold mb-2">Product details</h2>
+                        <!-- detail  -->
+                        <div class="text-[1rem] md:text-[1.2rem] text-[#545454]">
+                            <h3 class="text-[1.2rem] text-[#21242A] font-semibold">Nike Mercurial Lite</h3>
+                            <p>Firm-Ground High-Top Soccer Cleats</p>
+                            <p>White/Black</p>
+                            <p>Size L</p>
+                        </div>
+                    </div>
+                    <!-- Item quantity-->
+                    <div class="flex flex-col justify-start text-center text-start md:items-center mb-2">
+                        <h2 class="text-[#21242A] text-[1.5rem] font-semibold mb-2 md:none">Quantiy</h2>
+                        <div class="flex items-center gap-4">
+                            <button type="button" title="Decrease quantity" aria-label="Decrease quantity" class="px-2 py-1 bg-[#f5f5f5] rounded-full hover:bg-[#e0e0e0] transition-colors duration-200">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <span class="text-[1rem] md:text-[1.2rem]">1</span>
+                            <button type="button" title="Increase quantity" aria-label="Increase quantity" class="px-2 py-1 bg-[#f5f5f5] rounded-full hover:bg-[#e0e0e0] transition-colors duration-200">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Item price -->
+                    <div class="flex flex-col justify-start mb-2 text-start md:items-center ">
+                        <h2 class="text-[#21242A] text-[1.5rem] font-semibold mb-2">Total</h2>
+                        <p class="text-[1rem] md:text-[1.2rem] text-[#545454]">$23.00</p>
+                    </div>
+                    <div class="col-span-1 md:col-span-4 flex flex-row gap-10 justify-between md:justify-end mb-2 text-start md:items-center ">
+                        <span class="text-[#545454] text-[1.5rem] font-semibold mb-2 hover:text-[#21242A]"><i class="fa-solid fa-cart-shopping" title="Add to cart"></i></span>
+                        <span class="text-[#545454] text-[1.5rem] font-semibold mb-2 hover:text-[#21242A]"><i class="fa-solid fa-trash" title="Remove item"></i></span>
+                        
+                    </div>
+                </section>
+                
+            </section>
+        </section>
     </main>
 
     <footer class="w-full h-auto bg-[#f5f5f5] mx-auto mt-10 md:mt-50 py-4 md:py-6 px-[30px]" >
@@ -138,3 +268,5 @@
     </footer>
 </body>
 </html>
+
+
